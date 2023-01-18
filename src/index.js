@@ -3,7 +3,9 @@ import './index.pcss';
 import Uploader from './uploader';
 import { make, moveCaretToTheEnd, isEmpty } from './utils/dom';
 import { getExtensionFromFileName } from './utils/file';
-import { IconChevronDown, IconFile } from '@codexteam/icons';
+import { IconFile } from '@codexteam/icons';
+
+import downloadIcon from '../asset/download.svg';
 
 const LOADER_TIMEOUT = 500;
 
@@ -437,14 +439,14 @@ export default class AttachesTool {
     this.nodes.wrapper.appendChild(fileInfo);
 
     if (file.url !== undefined) {
-      const downloadIcon = make('a', this.CSS.downloadButton, {
-        innerHTML: IconChevronDown,
+      const _downloadIcon = make('a', this.CSS.downloadButton, {
+        innerHTML: downloadIcon,
         href: file.url,
         target: '_blank',
         rel: 'nofollow noindex noreferrer',
       });
 
-      this.nodes.wrapper.appendChild(downloadIcon);
+      this.nodes.wrapper.appendChild(_downloadIcon);
     }
   }
 

@@ -439,7 +439,7 @@ export default class AttachesTool {
     this.nodes.wrapper.appendChild(fileInfo);
 
     if (file.url !== undefined) {
-      const _downloadIcon = make('a', this.CSS.downloadButton, {
+      const _downloadIcon = make('a', [], {
         innerHTML: downloadIcon,
         href: file.url,
         target: '_blank',

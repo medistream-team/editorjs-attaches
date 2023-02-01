@@ -1,6 +1,6 @@
 {
-  "name": "editorjs-attaches-test",
-  "version": "0.0.3",
+  "name": "@medistream/editorjs-attaches",
+  "version": "0.0.4",
   "repository": "https://github.com/medistream-team/editorjs-attaches",
   "license": "MIT",
   "scripts": {

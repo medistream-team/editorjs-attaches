@@ -5,7 +5,7 @@ import { make, moveCaretToTheEnd, isEmpty } from './utils/dom';
 import { getExtensionFromFileName } from './utils/file';
 import { IconFile } from '@codexteam/icons';
 
-import downloadIcon from '../asset/download.svg';
+import downloadIcon from './img/download.svg';
 
 const LOADER_TIMEOUT = 500;
 
